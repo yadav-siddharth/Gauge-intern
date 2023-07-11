@@ -1,0 +1,215 @@
+.hero{
+          width: 100%;
+          height: 690px;
+
+          background: #1C1C3A;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          display: grid;
+          grid-template-columns:repeat(2,1fr);
+          grid-gap:5px;
+          /* margin:4rem 0; */
+}
+
+mark{
+          background-color: #1C1C3A;
+          color: #E35564;
+          font-size: 2.8rem;
+          font-weight: 600;
+          font-family: 'Poppins', sans-serif;
+}
+
+.heading{
+          line-height: 1.75rem;
+}
+
+.user{
+          display: flex;
+          max-width: 500px;
+          justify-content: space-evenly;
+          font-size: 0.8rem;
+          color:#FFFFFF;
+          animation-duration: 1s;
+          animation-name: Slidein;
+}
+@keyframes Slidein {
+          from{
+                    margin-left: -100%;
+          }
+          to{
+                    margin-left: 10%;
+          }  
+}                  
+
+
+.left{
+          height:100%;
+          max-width:100%;
+          display:flex;
+          flex-direction: column;
+          padding: 0.5rem;
+          
+}
+
+.hero-header{
+          border-radius: 50px 50px 50px 50px;
+          background-color: #FFFFFF;
+          font-weight: bolder;
+          padding: 0.5rem;
+          color: #6b6b6b;
+          font-family: 'Poppins', sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          max-width: 250px;
+}
+
+.content{
+          margin: auto;
+}
+
+h1 {
+          font-size: 2.8rem;
+          font-weight: 600;
+          color: #eaeaed;
+          font-family:  'Poppins', sans-serif;
+}
+
+p{
+          color:#aeb1b5;
+          font-size: 1rem;
+          font-weight: 400;
+          font-family:  'Poppins', sans-serif;
+
+}
+
+.btn{
+          padding: 12px 32px;
+          font-size: 1rem;
+          text-transform: uppercase;
+          background-color:#3B82F6;
+          color: #FFFFFF;
+          font-weight: 600;
+          cursor:pointer;
+          border: #1C1C3A 1px solid;
+          top:50%;
+          border-radius: 40px;
+                  
+}
+        
+     
+        
+.button{
+          margin-top: 1.5rem;
+          margin-left: 70px;
+}
+         
+        
+.btn:hover{
+          background-color:#B5F432;
+          color: #fff;
+          transition: 0.3s;
+}
+
+.right{
+          height: 100%;
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+          
+}
+
+.photo-section{
+          display: block;
+          margin: auto;
+}
+
+.student , .employeer, .company{
+          width: 150px;
+          padding: 1rem;
+          font-weight: 600;
+          border-radius: 12px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          font-family: 'Poppins', sans-serif;
+}
+
+.student{
+          background-color: #E35564;
+}
+.company{
+          background-color: #FFFFFF;
+          color: #1C1C3A;
+          font-weight: 600;
+
+}
+
+.photo-header{
+          line-height: 1rem;
+          
+          /* display: flex; */
+          justify-content: center;
+          left: 2;
+          position: absolute;
+          z-index: 1;
+}
+
+h2{
+          font-family: 'Poppins', sans-serif;
+          font-size: 2rem;
+          color: #FFFFFF;
+}
+
+@media screen and ( max-width:640px ){
+          .hero{
+                    grid-template-columns: 1fr;
+                    height: 805px;
+                    width: 100%;
+          }
+          .heading{
+                    line-height: 2.25rem;
+          }
+          .user{
+
+                    max-width: 380px;
+                    font-size: 0.6em;
+          }
+
+          .content{
+                    margin-top: 40px;
+          }
+          h2{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.5rem;
+                    color: #FFFFFF;
+          }
+          h1{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    margin: auto;
+          }
+          mark{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+          }
+
+          p{
+                    font-size: 0.8rem; 
+                    line-height: normal;
+                    padding: 0;
+          }
+
+          .water{
+                    width: 350px;
+                    height: 350px;
+          }
+
+
+          .btn{
+                    font-size: 0.8rem;
+          }
+
+
+          
+}
